@@ -9,5 +9,5 @@ import compress from "astro-compress";
 export default defineConfig({
   output: "server",
   adapter: node(),
-  integrations: [react(), image(), compress()]
+  integrations: [react(), image(), compress()],
 });
