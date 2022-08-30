@@ -75,6 +75,13 @@
     uvu "^0.5.0"
     vfile-message "^3.0.0"
 
+"@astrojs/node@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@astrojs/node/-/node-1.0.0.tgz#30a5aa9f427016b4a1e3b0bb0c44bc1e09f8bda4"
+  integrity sha512-w2QSYICDf9JC43bf9cLiiCMHaSfP6Nh07Ss8mDAJScG30Sc73stS/mkPxdnISABo2SQbtXjNe8rxwdu7Sus7Ag==
+  dependencies:
+    "@astrojs/webapi" "^1.0.0"
+
 "@astrojs/prism@^1.0.0":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@astrojs/prism/-/prism-1.0.1.tgz#a7a778f9e3814885f587d8074a15452947ab4252"
