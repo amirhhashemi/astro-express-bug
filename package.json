@@ -11,6 +11,7 @@
     "server": "node server/server.mjs"
   },
   "devDependencies": {
+    "@astrojs/image": "^0.3.6",
     "@astrojs/node": "^1.0.0",
     "@astrojs/react": "^1.1.0",
     "@types/react": "^18.0.17",

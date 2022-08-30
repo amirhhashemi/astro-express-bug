@@ -1,0 +1,64 @@
+---
+import { Image } from "@astrojs/image/components";
+
+const images = [
+  "andrei-ionov-O0eomEdcums-unsplash",
+  "daniel-lezuch-iRjx7w3O8v0-unsplash",
+  "domie-sharpin-eRgFlbnzb48-unsplash",
+  "dusty-TcG-GUh-Br8-unsplash",
+  "felix-rottmann-nynSCWcbVa4-unsplash",
+  "karthik-sreenivas-IKf4BZ-C--Q-unsplash",
+  "maddy-weiss-LVGRrZ59Iek-unsplash",
+  "ma-deldari-329lE7Q7I54-unsplash",
+  "markus-spiske-WfbBHQrQDao-unsplash",
+  "marlin-clark-kRGuLooeAO0-unsplash",
+  "michail-dementiev-6qVcFc1r7WU-unsplash",
+  "moises-ferreira-bF6yfWzBqPc-unsplash",
+  "moises-ferreira-_ZIzhLxDpJA-unsplash",
+  "neha-maheen-mahfin-AOpV_IK8tOw-unsplash",
+  "neha-maheen-mahfin-FtiAj6ggKnU-unsplash",
+  "neha-maheen-mahfin-TOKRHlWE56s-unsplash",
+  "nicolas-houdayer-W5m-jv33nDM-unsplash",
+  "nicolas-houdayer-wkPHrMu24ms-unsplash",
+  "photo-is-beauty-to-u-m2y-eByFnvc-unsplash",
+  "richard-sagredo-ZC2PWF4jTHc-unsplash",
+  "rod-long-emzuopV7SFM-unsplash",
+  "rod-long-MZ0m9XRO06s-unsplash",
+  "ryan-ancill-DmwHIIAm4fk-unsplash",
+  "sam-dosan-OiWFAh9tmHM-unsplash",
+  "sina-bahar-acymqtssT7A-unsplash",
+  "sina-bahar-SbJzkb93CFs-unsplash",
+  "s-tsuchiya-rE87Px3JbUY-unsplash",
+  "wolfgang-hasselmann-y3UlPywSUcs-unsplash",
+  "zongnan-bao-yMxJEUCJhHY-unsplash",
+];
+---
+
+<div>
+  {
+    images.map((image, i) => {
+      return (
+        <div>
+          <Image
+            src={import(`../assets/images/${image}.jpg`)}
+            format="jpeg"
+            width={640}
+            height={426}
+            loading={i === 0 ? "eager" : "lazy"}
+          />
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industrys standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
+          </p>
+        </div>
+      );
+    })
+  }
+</div>
